@@ -1,0 +1,36 @@
+.common {
+    &Progress {
+        margin-top: 60px;
+        &::before {
+            content: "";
+            width: 88%;
+            height: 1px;
+            background: $black;
+            position: absolute;
+            top: 24px;
+            left: 24px;
+        }
+        figure {
+            z-index: 10;
+            img {
+                padding: 14px;
+            }
+        }
+        span {
+            font-size: 20px;
+            border: 1px solid #030303;
+            padding: 8px 0px;
+            width: 48px;
+            z-index: 10;
+        }
+    }
+    &Tag {
+        span {
+            padding: 4px 24px;
+            border: 1px solid #000;
+            border-left: 4px solid #000;
+            box-sizing: border-box;
+        }
+
+    }
+}

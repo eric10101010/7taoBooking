@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/images/logo.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>結帳1</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <section class="order">
+      <div class="container">
+        <div class="orderList row">
+            <div class="col-md-6 mx-auto">
+                <ol class="commonProgress d-flex justify-content-between position-relative">
+                  <li class="d-flex flex-column align-items-center">
+                    <span class="number d-flex justify-content-center align-items-center mb-0 bg-primary text-secondary">1</span>
+                    <p class="fw-bold pt-2">訂單確認</p>
+                  </li>
+                  <li class="d-flex flex-column align-items-center">
+                    <span class="number d-flex justify-content-center align-items-center mb-0 bg-info">2</span>
+                    <p class="fw-bold pt-2">結帳付款</p>
+                  </li>
+                  <li class="d-flex flex-column align-items-center">
+                    <span class="number d-flex justify-content-center align-items-center mb-0 bg-info">3</span>
+                    <p class="fw-bold pt-2">訂單結果</p>
+                  </li>
+                </ol>
+                <ul class="orderHeader">
+                  <li class="mt-7 mb-5">
+                    <h2 class="fw-bold text-center">返老還童-制服聯誼</h2>
+                  </li>
+                  <li class="py-2 d-flex justify-content-between border-2 border-primary border-top">
+                    <h4 class="fw-bold">日期</h4>
+                    <span>2023/5/12</span>
+                  </li>
+                  <li class="py-2 d-flex justify-content-between border-primary border-top border-bottom">
+                      <h4 class="fw-bold">票種</h4>
+                      <span>改頭換面票（含大改造）</span>
+                  </li>
+                  <li class="py-2 d-flex justify-content-between border-bottom border-primary">
+                      <h4 class="fw-bold">票種</h4>
+                      <span>$8000</span>
+                  </li>
+                </ul>
+                <form action="#" class="orderForm d-flex flex-column mt-7">
+                    <figure class="mx-auto">
+                      <img src="../assets/images/sparkler.png" alt="sparkler">
+                    </figure>
+                    <h3 class="mx-auto fw-bold py-3">聯絡人資料</h3>
+                    <label for="name" class="form-label">聯絡人姓名</label>
+                    <input type="text" name="name" id="name" placeholder="請輸入聯絡人名稱" class="form-control mb-3 border border-2 border-primary rounded-0 px-3 py-2">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" id="email" placeholder="請輸入Email" class="form-control mb-3 border border-2 border-primary rounded-0 px-3 py-2">
+                    <label for="tel" class="form-label">手機</label>
+                    <input type="tel" name="tel" id="tel" placeholder="請輸手機號碼" class="form-control border border-2 border-primary rounded-0 px-3 py-2">
+                    <a href="payment.html" class="orderBtn bg-primary text-white d-flex align-items-center justify-content-center mx-auto py-2 mt-5 mb-3">
+                      <span>
+                        確認表單資料
+                      </span>
+                      <img src="../assets/images/rounded-double-right 1.svg" alt="arrow">
+                    </a>
+                    <a href="index.html" class="text-center text-light">取消購票</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  </body>
+</html>

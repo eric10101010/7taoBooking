@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/images/logo.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>結帳3</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <section class="checkout">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <ol class="commonProgress d-flex justify-content-between position-relative">
+              <li class="d-flex flex-column align-items-center">
+                <figure class="bg-dark text-secondary">
+                  <img src="../assets/images/verification-check 1.svg" alt="done">
+                </figure>
+                <p class="fw-bold pt-2">訂單確認</p>
+              </li>
+              <li class="d-flex flex-column align-items-center">
+                <figure class="bg-dark text-secondary">
+                  <img src="../assets/images/verification-check 1.svg" alt="done">
+                </figure>
+                <p class="fw-bold pt-2">結帳付款</p>
+              </li>
+              <li class="d-flex flex-column align-items-center">
+                <span class="number d-flex justify-content-center align-items-center mb-0 bg-primary text-secondary">
+                  3
+                </span>
+                <p class="fw-bold pt-2">訂單結果</p>
+              </li>
+            </ol>
+            <div class="checkoutHeader d-flex flex-column align-items-center mt-7 mb-5">
+              <span class="material-symbols-outlined text-primary">
+                check_circle
+              </span>
+              <h2 class="pt-2">訂購成功</h2>
+            </div>
+            <ul class="orderHeader">
+              <li class="py-2 d-flex justify-content-between border-2 border-primary border-top">
+                <h4 class="fw-bold">訂單編號</h4>
+                <span>892746123</span>
+              </li>
+              <li class="py-2 d-flex justify-content-between border-primary border-top border-bottom">
+                  <h4 class="fw-bold">訂購時間</h4>
+                  <span>2023/04/28 14:30</span>
+              </li>
+              <li class="py-2 d-flex justify-content-between border-bottom border-primary">
+                <h4 class="fw-bold">票券</h4>
+                <span>改頭換面票（含大改造）$8000</span>
+              </li>
+              <li class="py-2 d-flex justify-content-between border-bottom border-primary">
+                <h4 class="fw-bold">取票序號</h4>
+                <span class="text-third">95G54J4434</span>
+              </li>
+              <li class="py-2 d-flex justify-content-between border-bottom border-primary">
+                  <h4 class="fw-bold">取票號碼</h4>
+                  <span class="text-third">04597101</span>
+              </li>
+            </ul>
+            <div class="checkoutFooter mt-3">
+              <p class="text-light">
+                請至 7-Eleven 完成取票，請於 ibon 點選【購票/取票/訂房】>【售票系統】>【取票】
+                <br>>【拓元售票系統】。<br>
+                若您未前往取票，本筆交易仍視為完成，不可取消訂單。<br>
+                若需退票，請按照退票辦法進行申請。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+  </body>
+</html>
