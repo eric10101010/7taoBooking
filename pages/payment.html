@@ -11,33 +11,45 @@
   <body>
     <%- include('./layout/header'); -%>
     <section class="payment">
-      <div class="container">
+      <div class="container py-0">
         <div class="row">
-          <div class="col-6 mx-auto">
+          <div class="col-lg-6 col-md-8 col-12 mx-auto">
             <ol class="commonProgress d-flex justify-content-between position-relative">
               <li class="d-flex flex-column align-items-center">
                 <figure class="bg-dark text-secondary">
                   <img src="../assets/images/verification-check 1.svg" alt="done">
                 </figure>
-                <p class="fw-bold pt-2">訂單確認</p>
+                <p class="fw-bold pt-lg-2 pt-md-2 pt-1">訂單確認</p>
               </li>
               <li class="d-flex flex-column align-items-center">
-                <span class="number d-flex justify-content-center align-items-center mb-0 bg-primary text-secondary">2</span>
-                <p class="fw-bold pt-2">結帳付款</p>
+                <span class="number d-flex justify-content-center align-items-center mb-0 bg-dark text-secondary">2</span>
+                <p class="fw-bold pt-lg-2 pt-md-2 pt-1">結帳付款</p>
               </li>
               <li class="d-flex flex-column align-items-center">
                 <span class="number d-flex justify-content-center align-items-center mb-0 bg-info">3</span>
-                <p class="fw-bold pt-2">訂單結果</p>
+                <p class="fw-bold pt-lg-2 pt-md-2 pt-1">訂購結果</p>
               </li>
             </ol>
-            <h2 class="text-center fw-bold pt-7 pb-4">返老還童-制服聯誼</h2>
           </div>
-          <div class="paymentStatus bg-dark mx-auto text-secondary mb-5">
-            <h3 class="text-center d-lg-block d-md-none d-none">您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。</h3>
-            <h3 class="text-center d-lg-none d-md-block d-block">您的訂單已保留，請在2023/5/30 04:32 前完成繳費。<br>若逾期未繳款，系統將取消您的訂單。</h3>
+        </div>
+        <div class="row mt-lg-8 mt-md-6 mt-5 mb-4">
+          <div class="col-lg-6 col-md-8 col-12 mx-auto">
+            <h2 class="fw-bold text-lg-center text-md-center text-start">
+              返老還童-制服聯誼
+            </h2>
           </div>
-          <div class="col-lg-6 col-md-8 mx-auto">
-            <ul class="mb-7">
+        </div>
+        <div class="paymentStatus bg-dark text-secondary mx-auto">
+          <h3 class="text-center d-lg-block d-md-none d-none">
+            您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。
+          </h3>
+          <h3 class="text-center d-lg-none d-md-block d-block">
+            您的訂單已保留，請在2023/5/30 04:32 前完成繳費。<br>若逾期未繳款，系統將取消您的訂單。
+          </h3>
+        </div>
+        <div class="row mt-lg-6 mt-md-6 mt-5">
+          <div class="col-lg-6 col-md-8 col-12 mx-auto px-lg-0 px-md-0 px-3">
+            <ul>
               <li class="py-2 d-flex justify-content-between border-2 border-primary border-top">
                 <h4 class="fw-bold">訂單編號</h4>
                 <span>892746123</span>
@@ -47,28 +59,28 @@
                   <span>改頭換面票（含大改造）$8000</span>
               </li>
             </ul>
-            <form action="order.html" class="paymentForm d-flex flex-column" novalidate>
+            <form action="order.html" class="paymentForm d-flex flex-column mt-lg-8 mt-md-6 mt-6" novalidate>
                 <figure class="mx-auto">
                   <img src="../assets/images/sparkler.png" alt="sparkle">
                 </figure>
-                <h3 class="mx-auto fw-bold my-3">結帳資訊</h3>
+                <h3 class="mx-auto fw-bold my-4">結帳資訊</h3>
                 <label for="ticketInfo" class="mb-2 ">取票資訊</label>
                 <input type="text" name="ticketInfo" id="ticketInfo" placeholder="請輸入身分證字號或護照號碼" class="form-control paymentID bg-info border border-2 border-primary rounded-0 mb-1 px-3 py-2" required>
                 <span id="ticketInfoFeedback" class="invalid-feedback">請輸入身分證字號或護照號碼</span>
-                <span class="mb-3 text-light">
+                <span class="mb-4 text-light">
                   請輸入您的<span class="text-third">身分證字號</span>供取票使用，外籍人士請輸入<span class="text-third">護照號碼</span></span>
                 <label>付款方式</label>
                 <div class="d-flex align-items-center my-2">
                   <input type="radio" name="creditCard" id="creditCard" value="信用卡" class="me-2">
-                  <span>信用卡</span>
+                  <h4>信用卡</h4>
                 </div>
                 <div class="d-flex align-items-center">
                   <input type="radio" name="atmAccount" id="atmAccount" value="ATM虛擬帳號" class="me-2">
-                  <span>ATM虛擬帳號</span>
+                  <h4>ATM虛擬帳號</h4>
                 </div>
-                <a href="checkout.html" class="paymentBtn bg-primary text-white mt-5 mx-auto py-2 text-center d-flex align-items-center justify-content-center">
+                <a href="checkout.html" class="paymentBtn bg-primary text-white mt-lg-6 mt-md-6 mt-5 mx-auto py-2 text-center d-flex align-items-center justify-content-center">
                   確認訂單並繳費 $8000
-                  <img src="../assets/images/rounded-double-right 1.svg" alt="arrow">
+                  <img src="../assets/images/rounded-double-right 1.svg" alt="arrow" class="ms-1">
                 </a>
             </form>
           </div>

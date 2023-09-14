@@ -6,78 +6,106 @@
       background: url(../assets/images/event/13.jpg) no-repeat 50% 50%;
       background-size: cover;
       color: #FFFFFF;
+      @include mobile {
+        height: 350px;
+        padding: 0 40px;
+      }
       h2 {
         font-size: 60px;
+        @include mobile {
+          font-size: 32px;
+          line-height: 37px;
+        }
       }
     }
     &Text {
       text-align: center;
       h3 {
         font-size: 24px;
+        @include mobile {
+          font-size: 18px;
+        }
+      }
+      p {
+        @include mobile {
+          display: none;
+        }
       }
     }
   }
   &Explore {
     &List {
       display: flex;
-      justify-content: space-between;
       column-gap: 24px;
+      @include pad {
+        column-gap: 16px;
+      }
+      @include mobile {
+        column-gap: 8px;
+      }
     }
     &Item {
-      width: 196px;
+      width: 15.124%;
       border: 2px solid #000000;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 35px 0px;
+      padding: 35px 0;
+      @include pad {
+        width: 31.753%;
+        padding: 24px 0;
+      }
+      @include mobile {
+        width: 111px;
+        height: 112px;
+        padding: 20px 0;
+      }
       img {
         width: 80px;
         height: 80px;
+        @include mobile {
+          width: 40px;
+          height: 40px;
+        }
       }
       h3 {
         font-size: 24px;
+        line-height: 34px;
         padding-top: 12px;
         text-align: center;
+        @include mobile {
+          font-size: 16px;
+          padding-top: 0;
+        }
       }
     }
     &Link {
-      background-color: #000000;
-      a{
-        color: #FBFF22;
-        font-size: 48px;
-      }
-    }
-  }
-  &Recent {
-    &Item {
-      h3 {
-        font-size: 48px;
-        font-weight: bold;
-        padding-bottom: 12px;
-        border-bottom: 3px solid #030303;
-      }
-      h4 {
+      color: #FBFF22;
+      font-size: 48px;
+      line-height: 60px;
+      @include mobile {
         font-size: 24px;
-        font-weight: 700;
-        padding-bottom: 12px;
+        line-height: 32px;
       }
-      img {
-        margin: 12px 0;
-        width: 100%;
-        height: 255px;
-      }
-    }
-    &Bar {
-      border-top: 2px solid #030303;
-      border-bottom: 2px solid #030303;
     }
   }
   &Online {
-    &Item {
+    margin-top: 60px;
+    &List {
+      display: flex;
+      column-gap: 24px;
+    }
+    &Photo {
+      //746px
+      width: 57.562%;
       img {
         width: 100%;
         height: 317px;
       }
+    }
+    &Text {
+      //526px
+      width: 40.587%;
       h3 {
         font-size: 32px;
         line-height: 46px;
@@ -86,7 +114,7 @@
         line-height: 21px;
       }
       p {
-        height: 115px;
+        line-height: 23px;
       }
     }
     &Bar {
@@ -97,9 +125,24 @@
     &Btn {
       background-color: #030303;
       font-size: 20px;
+      @include mobile {
+        font-size: 16px;
+      }
       a {
         color: #FFF;
         line-height: 29px;
+        @include mobile {
+          line-height: 23px;
+        }
+      }
+      svg {
+        padding-right: 4px;
+        width: 20px;
+        height: 20px;
+        @include mobile {
+          width: 16px;
+          height: 16px;
+        }
       }
     }
   }
@@ -116,6 +159,9 @@
       position: relative;
       width: 306px;
       border: 2px solid #030303;
+      @include mobile {
+        margin-bottom: 48px;
+      }
       img {
         width: 100%;
         height: 274px;
@@ -133,11 +179,34 @@
     }
   }
   &Contact {
+    input {
+      @include mobile {
+        width: 100%;
+        display: flex;
+      }
+    }
     &Item {
-      border: 2px solid #030303;
+      outline: 2px solid #030303;
+      input {
+        @include mobile {
+          padding: 16px 24px;
+          margin-bottom: 16px;
+        }
+      }
       h3 {
         font-size: 32px;
         border-bottom: 2px solid #030303;
+        @include mobile {
+          font-size: 24px;
+        }
+      }
+      svg {
+        width: 20px;
+        height: 20px; 
+        @include mobile {
+          width: 16px;
+          height: 16px;
+        }
       }
     }
   }
@@ -147,24 +216,42 @@
     padding: 60px 0;
     border-top: 3px solid #030303;
     border-bottom: 3px solid #030303;
+    @include mobile {
+      margin-top: 48px;
+      padding: 48px 0;
+    }
     h2 {
       font-size: 32px;
+      @include mobile {
+        font-size: 18px;
+        line-height: 26px;
+      }
     }
     h3 {
       font-size: 18px;
+      @include mobile {
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
   }
 }
 
-.indexTitle {
-  border: 3px solid #030303;
-  padding: 24px 32px;
-  display: flex;
-  align-items: center;
-  h2 {
-    font-size: 64px;
-  }
-  h3 {
+.marquee {
+  margin: 60px 0;
+
+  & .swiper-slide {
+    padding-top: 24px;
+    padding-bottom: 24px;
     font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 3.2px;
+    width: auto;
+    color: #fbff22;
+    background: #000;
+  }
+
+  .swiper-wrapper {
+    transition-timing-function: linear;
   }
 }

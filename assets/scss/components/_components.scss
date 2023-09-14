@@ -1,0 +1,77 @@
+.common {
+    &Card {
+        &List {
+            display: flex;
+            column-gap: 24px;
+        }
+        &Item {
+            width: 32.099%;
+            padding: 0;
+            @include pad {
+                width: 48.276%;
+            }
+            @include mobile {
+                width: 100%;
+            }
+            h3 {
+                font-size: 48px;
+                font-weight: bold;
+                padding-bottom: 12px;
+                border-bottom: 3px solid #030303;
+                    @include mobile {
+                        font-size: 32px;
+                        padding-bottom: 8px;
+                }
+            }
+            h4 {
+                font-size: 24px;
+                font-weight: 700;
+                padding-bottom: 12px;
+                    @include mobile {
+                    font-size: 18px;
+                    padding-bottom: 8px;
+                }
+            }
+            img {
+                width: 100%;
+                height: 255px;
+            }
+        }
+        &Bar {
+            border-top: 2px solid #030303;
+            border-bottom: 2px solid #030303;
+        }   
+    }
+}
+.commmonTag {
+    color: #000;
+}
+.commonPage {
+    color: #000;
+}
+.loginHover {
+    color: #000;
+}
+.commonEventTag {
+    color: #000;
+}
+
+.page {
+    &List {
+        margin-top: 60px;
+        column-gap: 8px;
+        display: flex;
+        justify-content: center;
+    }
+    &Item {
+        width: 40px;
+        height: 40px;
+        outline: 1px solid #000000;
+        padding: 8px 15px;
+    }
+    &Arrow {
+        outline: 1px solid #000000;
+        width: 40px;
+        height: 40px;
+    }
+}

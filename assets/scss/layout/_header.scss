@@ -4,17 +4,16 @@
       justify-content: space-between;
       align-items: center;
       @include pad {
-          padding: 0 $text-2xl;
+          padding: 0 12px;
       }
       @include mobile {
-          padding: 0 15px;
+          padding: 0px;
       }
   }
   background-color: $info;
   &Logo{
       background: url(../images/logo.png) no-repeat center;
       background-size: contain;
-      width: 80px;
       text-indent: 101%;
       white-space: nowrap;
       overflow: hidden;
@@ -49,8 +48,17 @@
   &Search {
     input {
       width: 284px;
-      height: 55px;
-      outline: 2px solid $primary;
+      border: 2px solid $primary;
+      @include pad {
+        width: 254px;
+      }
+      @include mobile {
+        width: 168px;
+        height: 39px;
+      }
+      &::placeholder {
+        color: $light;
+      }
     }
   }
   &Item{
@@ -73,8 +81,8 @@
       }
   }
   &Link {
-      font-size: $text-m;
-      color: #FFFFFF;
+      font-size: 18px;
+      color: $primary;
   }
   &Link:hover{
       color: $secondary;
@@ -89,45 +97,29 @@
           white-space: nowrap;
           overflow: hidden;
           padding: 25px 0;
+          @include mobile {
+            width: 40px;
+            padding: 16px 0;
+          }
       }
   }
 }
 .hamburger {
-  position: relative;
-  width: 30px;
-  height: 15px;
-  padding: 10px 5px;
+  border: 1px solid $primary;
+  border-radius: 4px;
   position: relative;
   transform: rotate(0deg);
   transition: .5s ease-in-out;
   cursor: pointer;
-  span{
-      display: block;
-      position: absolute;
-      height: 3px;
-      width: 100%;
-      background: #ffffff;
-      border-radius: 10px;
-      opacity: 1;
-      transform: rotate(0deg);
-      transition: .25s ease-in-out;
-  }
-  span:nth-child(1) {
-    top: 0px;
-  }
-  span:nth-child(2), span:nth-child(3) {
-    top: 10px;
-  }
-  span:nth-child(4) {
-    top: 20px;
-  }
   &Menu {
-    background-color: $primary;
+    background-color: $info;
+    padding: 24px 12px;
+    border: 2px solid $primary;
     opacity: 0.97;
     z-index: 100;
     width: 100%;
     position: absolute;
-    top: 84px;
+    top: 101px;
     right: 0;
     transform: scaleY(0);
     transition: transform .3s ease-in-out;

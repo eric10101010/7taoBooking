@@ -1,50 +1,113 @@
 .event {
     &Banner {
+        margin-top: 30px;
+        @include mobile {
+            margin-top: 30px;
+            padding: 0;
+        }
         &List {
-            padding-top: 30px;
             display: flex;
             justify-content: space-between;
+            @include mobile {
+                flex-direction: column;
+            }
         }
         &Photo {
-            width: 1076px;
-            border: 3px solid #030303;
+            outline: 3px solid #030303;
             padding: 24px;
+            width: 83.025%;
+            @include pad {
+                width: 76%;
+            }
+            @include mobile {
+                width: 100%;
+                padding: 12px;
+            }
             img {
                 width: 100%;
                 height: 550px;
+                @include pad {
+                    height: 448px;
+                }
+                @include mobile {
+                    height: 180px;
+                }
             }
         }
         &Text {
-            width: 196px;
+            width: 15.124%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             @include pad {
+                width: auto;
+            }
+            @include mobile {
+                margin-top: 14px; //outlet 3px*2+8px
                 width: 100%;
-                margin-top: 24px;
                 flex-direction: row;
                 justify-content: space-between;
+                column-gap: 8px;
+                padding: 0;
             }
             h3 {
                 font-size: 48px;
+                line-height: 55px;
                 padding-top: 32px;
                 padding-bottom: 32px;
+                outline: 3px solid $primary;
                 @include pad {
+                    font-size: 40px;
+                    padding: 24px;
+                }
+                @include mobile {
+                    // width: 112px;
                     padding: 0 56px;
+                    font-size: 24px;
+                    line-height: 28px;
+                    padding: 0 24px;
                 }
             }
             h4 {
+                font-size: 48px;
+                padding-top: 32px;
+                padding-bottom: 32px;
+                line-height: 55px;
+                @include pad {
+                    font-size: 32px;
+                    line-height: 40px;
+                    padding: 24px;
+                }
+                @include mobile {
+                    font-size: 22px;
+                    line-height: 25px;
+                    // padding: 0 30px 0 24px;
+                    padding: 0 24px;
+                }
+            }
+            h5 {
                 font-size: 32px;
                 padding-bottom: 48px;
                 @include pad {
-                    padding: 0 48px;
+                    padding: 24px;
+                    font-size: 24px;
+                }
+                @include mobile {
+                    font-size: 16px;
+                    line-height: 18px;
+                    // padding: 12px 24px 12px 30px;
+                    padding: 12px 24px;
                 }
             }
         }
         &Date {
             display: flex;
             flex-direction: column;
+            outline: 3px solid $primary;
             @include pad {
+                width: 100%;
+            }
+            @include mobile {
                 flex-direction: row;
                 align-items: center;
             }
@@ -57,6 +120,14 @@
         height:100px;
         box-sizing:border-box;
         text-indent:5px;
+        @include pad {
+            width: 75px;
+            height: 75px;
+        }
+        @include mobile {
+            width: 50px;
+            height: 50px;
+        }
         &:before{
             content:'';
             position:absolute;         
@@ -67,27 +138,76 @@
             box-sizing:border-box;     
             border-bottom: 2px solid #000;       
             transform-origin:bottom center;
-            transform:rotateZ(-60deg);         
+            transform:rotateZ(-60deg);
+            @include pad {
+                width: 75px;
+                height: 75px;
+                top: -37.5px;
+            }
+            @include mobile {
+                width: 50px;
+                height: 50px;
+                top: -25px;
+            }       
         }
     }
     &Content {
         &Title {
             h2 {
                 font-size: 60px;
+                @include mobile {
+                    font-size: 32px;
+                    line-height: 46px;
+                }
             }
             p {
                 font-size: 22px;
+                @include mobile {
+                    font-size: 16px;
+                }
             }
         }
         &Text {
             padding: 32px;
-            border: 3px solid #030303;
+            outline: 3px solid #030303;
             background-color: #EBEAE8;
+            @include mobile {
+                padding: 16px;
+                outline: 2px solid #030303;
+            }
         }
     }
     &Ticket {
         &Btn {
             display: inline-block;
+            outline: 2px solid $primary;
+            @include mobile {
+                line-height: 23px;
+            }
+        }
+        table {
+            width: 100%;
+            @include mobile {
+                max-width: 540px;
+                width: 100%;
+            }
+        }
+        td {
+            @include mobile {
+                font-size: 14px;
+            }
+        }
+        &Type {
+            @include mobile {
+                width: 154px;
+            }
+        }
+        &Price {
+            width: 112px;
+            @include mobile {
+                width: 52px;
+            }
         }
     }
 }
+

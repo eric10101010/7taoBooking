@@ -1,19 +1,30 @@
 .common {
     &Progress {
         margin-top: 60px;
+        @include mobile {
+            margin-top: 24px;
+        }
         &::before {
             content: "";
-            width: 88%;
+            width:92%;
             height: 1px;
             background: $black;
             position: absolute;
             top: 24px;
             left: 24px;
+            @include mobile {
+                top: 16px;
+                left: 16px;
+            }
         }
         figure {
             z-index: 10;
             img {
                 padding: 14px;
+                @include mobile {
+                    padding: 8px;
+                    width: 32px;
+                }
             }
         }
         span {
@@ -22,6 +33,11 @@
             padding: 8px 0px;
             width: 48px;
             z-index: 10;
+            @include mobile {
+                line-height: 24px;
+                width: 32px;
+                padding: 4px 0;
+            }
         }
     }
     &Tag {
@@ -32,5 +48,27 @@
             box-sizing: border-box;
         }
 
+    }
+    &Title {
+        border: 3px solid #030303;
+        padding: 24px 32px;
+        display: flex;
+        align-items: center;
+        @include mobile {
+            padding: 16px 12px;
+            border: 2px solid #030303;
+        }
+        h2 {
+            font-size: 64px;
+            @include mobile {
+                font-size: 24px;
+            }
+        }
+        h3 {
+            font-size: 32px;
+            @include mobile {
+                font-size: 16px;
+            }
+        }
     }
 }
