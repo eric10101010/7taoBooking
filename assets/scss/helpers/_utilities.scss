@@ -6,7 +6,7 @@
         }
         &::before {
             content: "";
-            width:92%;
+            width:90%;
             height: 1px;
             background: $black;
             position: absolute;
@@ -50,23 +50,26 @@
 
     }
     &Title {
-        border: 3px solid #030303;
-        padding: 24px 32px;
         display: flex;
+        justify-content: space-between;
         align-items: center;
+        outline: 3px solid #030303;
+        padding: 24px 32px;
         @include mobile {
             padding: 16px 12px;
-            border: 2px solid #030303;
+            outline: 2px solid #030303;
         }
         h2 {
             font-size: 64px;
             @include mobile {
+                margin: 0;
                 font-size: 24px;
             }
         }
         h3 {
             font-size: 32px;
             @include mobile {
+                margin: 0;
                 font-size: 16px;
             }
         }
