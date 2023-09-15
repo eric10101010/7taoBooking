@@ -3,11 +3,9 @@
   &Box {    
       justify-content: space-between;
       align-items: center;
-      @include pad {
-          padding: 0 12px;
-      }
+      padding: 24px 0;
       @include mobile {
-          padding: 0px;
+          padding: 12px 0;
       }
   }
   background-color: $info;
@@ -48,9 +46,10 @@
   &Search {
     input {
       width: 284px;
-      border: 2px solid $primary;
+      height: 55px;
       @include pad {
         width: 254px;
+        height: 44px;
       }
       @include mobile {
         width: 168px;
@@ -91,12 +90,12 @@
   &Hamburger {
       &Logo {
           background: url(../images/logo.png) no-repeat center;
+          width: 53px;
+          height: 53px;
           background-size: contain;
-          width: 54px;
           text-indent: 101%;
           white-space: nowrap;
           overflow: hidden;
-          padding: 25px 0;
           @include mobile {
             width: 40px;
             padding: 16px 0;
@@ -112,12 +111,13 @@
   transition: .5s ease-in-out;
   cursor: pointer;
   &Menu {
+    max-width: 100%;
+    width: 100%;
     background-color: $info;
     padding: 24px 12px;
     border: 2px solid $primary;
     opacity: 0.97;
     z-index: 100;
-    width: 100%;
     position: absolute;
     top: 101px;
     right: 0;
@@ -127,6 +127,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include mobile {
+      top: 77px;
+    }
   }
   &Item {
     margin: 25px 0;
