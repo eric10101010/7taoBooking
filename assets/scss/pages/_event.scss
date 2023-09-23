@@ -183,6 +183,11 @@
         &Btn {
             display: inline-block;
             outline: 2px solid $primary;
+            &:hover {
+                background-color: #000;
+                color: #FBFF22;
+                transition: .4s;
+            }
             @include mobile {
                 line-height: 23px;
             }

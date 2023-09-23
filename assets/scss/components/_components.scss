@@ -6,6 +6,7 @@
         }
         &Item {
             width: 32.099%;
+            padding: 0;
             @include pad {
                 width: 48.276%;
             }
@@ -39,6 +40,21 @@
         &Bar {
             border-top: 2px solid #030303;
             border-bottom: 2px solid #030303;
+            p {
+                cursor: pointer;
+                &:hover {
+                    border-bottom: 1px solid #000000;
+                }
+            }
+            &Hover {
+                span {
+                    &:hover {
+                        border-radius: 50%;
+                        background-color: #FBFF22;
+                        transition: .4s;
+                    }
+                }
+            }
         }   
     }
 }
@@ -69,10 +85,20 @@
         height: 40px;
         outline: 1px solid #000000;
         padding: 8px 15px;
+        cursor: pointer;
+        &:hover {
+            background-color: #000;
+            color: #FBFF22;
+            transition: .4s;
+        }
     }
     &Arrow {
         outline: 1px solid #000000;
         width: 40px;
         height: 40px;
+        &:hover {
+            opacity: .7;
+            transition: .4s;
+        }
     }
 }

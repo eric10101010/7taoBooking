@@ -41,11 +41,21 @@
         }
     }
     &Tag {
+        @include mobile {
+            max-width: 540px;
+        }
         span {
             padding: 4px 24px;
             border: 1px solid #000;
             border-left: 4px solid #000;
             box-sizing: border-box;
+            cursor: pointer;
+            &:hover {
+                border-left: 4px solid #FBFF22;
+                background-color: #000;
+                color: #FFF;
+                transition: .4s;
+            }
         }
 
     }
@@ -55,6 +65,7 @@
         align-items: center;
         outline: 3px solid #030303;
         padding: 24px 32px;
+        font-weight: bold;
         @include mobile {
             padding: 16px 12px;
             outline: 2px solid #030303;
