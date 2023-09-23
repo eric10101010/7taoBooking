@@ -22,11 +22,11 @@
                 <p class="fw-bold pt-lg-2 pt-md-2 pt-1">訂單確認</p>
               </li>
               <li class="d-flex flex-column align-items-center">
-                <span class="number d-flex justify-content-center align-items-center mb-0 bg-dark text-secondary">2</span>
+                <span class="number d-flex justify-content-center align-items-center mb-0 bg-dark text-secondary NotoSerif">2</span>
                 <p class="fw-bold pt-lg-2 pt-md-2 pt-1">結帳付款</p>
               </li>
               <li class="d-flex flex-column align-items-center">
-                <span class="number d-flex justify-content-center align-items-center mb-0 bg-info">3</span>
+                <span class="number d-flex justify-content-center align-items-center mb-0 bg-info NotoSerif">3</span>
                 <p class="fw-bold pt-lg-2 pt-md-2 pt-1">訂購結果</p>
               </li>
             </ol>
@@ -40,10 +40,10 @@
           </div>
         </div>
         <div class="paymentStatus bg-dark text-secondary mx-auto">
-          <h3 class="text-center d-lg-block d-md-none d-none">
+          <h3 class="text-center d-lg-block d-md-none d-none NotoSans">
             您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。
           </h3>
-          <h3 class="text-center d-lg-none d-md-block d-block">
+          <h3 class="text-center d-lg-none d-md-block d-block NotoSans">
             您的訂單已保留，請在2023/5/30 04:32 前完成繳費。<br>若逾期未繳款，系統將取消您的訂單。
           </h3>
         </div>
@@ -52,11 +52,11 @@
             <ul>
               <li class="py-2 d-flex justify-content-between border-2 border-primary border-top">
                 <h4 class="fw-bold">訂單編號</h4>
-                <span>892746123</span>
+                <span class="NotoSans">892746123</span>
               </li>
               <li class="py-2 d-flex justify-content-between border-bottom border-top border-primary">
                   <h4 class="fw-bold">票卷</h4>
-                  <span>改頭換面票（含大改造）$8000</span>
+                  <span class="NotoSans">改頭換面票（含大改造）$8000</span>
               </li>
             </ul>
             <form action="order.html" class="paymentForm d-flex flex-column mt-lg-8 mt-md-6 mt-6" novalidate>
@@ -64,21 +64,22 @@
                   <img src="../assets/images/sparkler.png" alt="sparkle">
                 </figure>
                 <h3 class="mx-auto fw-bold my-4">結帳資訊</h3>
-                <label for="ticketInfo" class="mb-2 ">取票資訊</label>
-                <input type="text" name="ticketInfo" id="ticketInfo" placeholder="請輸入身分證字號或護照號碼" class="form-control paymentID bg-info border border-2 border-primary rounded-0 mb-1 px-4 py-2" required>
+                <label for="ticketInfo" class="mb-2 NotoSans">取票資訊</label>
+                <input type="text" name="ticketInfo" id="ticketInfo" placeholder="請輸入身分證字號或護照號碼" class="form-control paymentID bg-info border border-2 border-primary rounded-0 mb-1 px-4 py-2 NotoSans" required>
                 <span id="ticketInfoFeedback" class="invalid-feedback">請輸入身分證字號或護照號碼</span>
-                <span class="mb-4 text-light">
-                  請輸入您的<span class="text-third">身分證字號</span>供取票使用，外籍人士請輸入 <span class="text-third">護照號碼</span></span>
-                <label>付款方式</label>
-                <div class="d-flex align-items-center my-2">
+                <span class="mb-4 text-light NotoSans">
+                  請輸入您的<span class="text-third">身分證字號</span>供取票使用，外籍人士請輸入 <span class="text-third">護照號碼</span>
+                </span>
+                <label class="NotoSans">付款方式</label>
+                <div class="d-flex align-items-center my-2 NotoSans">
                   <input type="radio" name="creditCard" id="creditCard" value="信用卡" class="me-2">
                   <h4>信用卡</h4>
                 </div>
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center NotoSans">
                   <input type="radio" name="atmAccount" id="atmAccount" value="ATM虛擬帳號" class="me-2">
                   <h4>ATM虛擬帳號</h4>
                 </div>
-                <a href="checkout.html" class="paymentBtn bg-primary text-white mt-lg-6 mt-md-6 mt-5 mx-auto py-2 text-center d-flex align-items-center justify-content-center">
+                <a href="checkout.html" class="paymentBtn bg-primary text-white mt-lg-6 mt-md-6 mt-5 mx-auto py-2 text-center d-flex align-items-center justify-content-center NotoSans">
                   確認訂單並繳費 $8000
                   <img src="../assets/images/rounded-double-right 1.svg" alt="arrow" class="ms-1">
                 </a>

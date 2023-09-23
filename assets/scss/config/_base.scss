@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro&family=Noto+Sans+TC:wght@300;400;500&family=Roboto:ital,wght@0,400;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@400;700&family=Yeseva+One&display=swap');
 *,*::before,*::after{
     box-sizing: border-box;
 }
 body {
-    font-family:'Roboto', 'Noto Sans TC', sans-serif;
+    font-family:'Yeseva One', 'Noto Serif TC', sans-serif;
     font-size: $font-size-base;
     line-height: 1.5;
     background-color: #F3F1E5;
@@ -12,9 +12,8 @@ body {
 img{
     max-width: 100%;
     height: auto;
-    display: block;
-    object-fit: cover;
     vertical-align: middle;
+    object-fit: cover;
 }
 a{
     text-decoration: none;
