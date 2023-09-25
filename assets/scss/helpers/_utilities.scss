@@ -65,7 +65,6 @@
         align-items: center;
         outline: 3px solid #030303;
         padding: 24px 32px;
-        font-weight: bold;
         @include mobile {
             padding: 16px 12px;
             outline: 2px solid #030303;
@@ -79,6 +78,7 @@
         }
         h3 {
             font-size: 32px;
+            font-weight: bold;
             @include mobile {
                 margin: 0;
                 font-size: 16px;
