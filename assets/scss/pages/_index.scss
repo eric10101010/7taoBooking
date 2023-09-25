@@ -77,6 +77,12 @@
           padding-top: 0;
         }
       }
+      a {
+        &:hover {
+          color: #FFF;
+          transition: .4s;
+        }
+      }
     }
     &Link {
       color: #FBFF22;
@@ -136,6 +142,16 @@
     &Btn {
       background-color: #030303;
       font-size: 20px;
+      &:hover {
+        a {
+          color: #FBFF22;
+          transition: .4s;
+        }
+        svg {
+          fill: #FBFF22;
+          transition: .4s;
+        }
+      }
       @include mobile {
         font-size: 16px;
       }
@@ -151,6 +167,7 @@
         padding-right: 4px;
         width: 20px;
         height: 20px;
+        fill: #FFF;
         @include mobile {
           width: 16px;
           height: 16px;
@@ -253,6 +270,21 @@
     &Icon {
       img {
         padding: 8px;
+      }
+    }
+    &Btn {
+      svg {
+        fill: #FFF;
+      }
+      &:hover {
+        span {
+          color: #FBFF22;
+          transition: .4s;
+        }
+        svg {
+          fill: #FBFF22;
+          transition: .4s;
+        }
       }
     }
   }
