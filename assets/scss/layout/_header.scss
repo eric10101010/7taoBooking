@@ -19,7 +19,7 @@
       &:hover{
           color: $secondary;
           opacity: 0.5;
-          transition: all .3s;
+          transition: all .4s;
       }
       @include mobile{
           width: $text-4xl;
@@ -62,6 +62,18 @@
   }
   &Item{
       padding: 0 $text-xl;
+      svg {
+        fill: #000;
+      }
+      &:hover {
+        a {
+          color: #9C9E18;
+        }
+        svg {
+          fill: #9C9E18;
+          transition: .4s;
+        }
+      }
       @include mobile {
           width: 50%;
           border: 1px solid $white;
@@ -82,10 +94,21 @@
   &Link {
       font-size: 18px;
       color: $primary;
-  }
-  &Link:hover{
-      color: $secondary;
-      transition: .5s;
+      &:hover {
+        a {
+          color: #9C9E18;
+          transition: .4s;
+        }
+        svg {
+          fill: #9C9E18;
+          transition: .4s;
+        }
+      }
+      a {
+        svg {
+          fill: #000;
+        }
+      }
   }
   &Hamburger {
       &Logo {
@@ -108,7 +131,7 @@
   border-radius: 4px;
   position: relative;
   transform: rotate(0deg);
-  transition: .5s ease-in-out;
+  transition: .4s ease-in-out;
   cursor: pointer;
   &Menu {
     max-width: 100%;
@@ -122,7 +145,7 @@
     top: 101px;
     right: 0;
     transform: scaleY(0);
-    transition: transform .3s ease-in-out;
+    transition: transform .4s ease-in-out;
     transform-origin: 50% 0;
     display: flex;
     flex-direction: column;
