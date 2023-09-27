@@ -295,6 +295,7 @@
     border-top: 3px solid #030303;
     border-bottom: 3px solid #030303;
     @include mobile {
+      max-width: 767px;
       margin-top: 48px;
       padding: 48px 0;
     }
