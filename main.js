@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 const swiper = new Swiper('.marquee', {
 	loop: true,
-	speed: 8000,
+	speed: 16000,
 	slidesPerView: 'auto',    
 	autoplay: {
 		delay: 0,
