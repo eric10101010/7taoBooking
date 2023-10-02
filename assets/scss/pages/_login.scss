@@ -24,5 +24,17 @@
     &Btn {
         font-size: 20px;
         padding: 8px 0;
+        color: #FFF;
+        svg {
+            fill: #FFF;
+        }
+        &:hover {
+            color: #FBFF22;
+            transition: .4s;
+            svg {
+                fill: #FBFF22;
+                transition: .4s;
+            }
+        }
     }
 }
