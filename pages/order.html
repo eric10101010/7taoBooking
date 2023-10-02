@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../assets/images/logo.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>結帳1</title>
+    <title>訂單確認</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -56,11 +56,15 @@
                     <input type="email" name="email" id="email" placeholder="請輸入Email" class="form-control mb-4 border border-2 border-primary bg-info rounded-0 px-4 py-2">
                     <label for="tel" class="form-label">手機</label>
                     <input type="tel" name="tel" id="tel" placeholder="請輸手機號碼" class="form-control border border-2 border-primary bg-info rounded-0 px-4 py-2">
-                    <a href="payment.html" class="orderBtn bg-primary text-white d-flex align-items-center justify-content-center mx-auto py-2 mt-lg-6 mt-md-6 mt-5 mb-4">
+                    <a href="payment.html" class="orderBtn bg-primary d-flex mx-auto py-2 mt-lg-6 mt-md-6 mt-5 mb-4">
                       <span class="fw-bold">
                         確認表單資料
                       </span>
-                      <img src="../assets/images/rounded-double-right 1.svg" alt="arrow" class="my-0 ms-1">
+                      <figure class="ms-1 d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                          <path d="M15.768 9.43999L11.704 5.37599C11.394 5.06599 10.892 5.06599 10.582 5.37599L10.232 5.72599C9.92201 6.03599 9.92201 6.53799 10.232 6.84799L12.826 9.44199C12.982 9.59799 13.058 9.79999 13.058 10.002C13.058 10.204 12.98 10.408 12.826 10.562L10.232 13.156C9.92201 13.466 9.92201 13.968 10.232 14.278L10.582 14.628C10.892 14.934 11.394 14.934 11.704 14.624L15.768 10.56C15.924 10.404 16 10.202 16 9.99999C16 9.79799 15.922 9.59399 15.768 9.43999ZM9.76801 9.43999L5.70401 5.37599C5.39401 5.06599 4.89201 5.06599 4.58201 5.37599L4.23201 5.72599C3.92201 6.03599 3.92201 6.53799 4.23201 6.84799L6.82601 9.44199C6.98201 9.59799 7.05801 9.79999 7.05801 10.002C7.05801 10.204 6.98001 10.408 6.82601 10.562L4.23201 13.156C3.92201 13.466 3.92201 13.968 4.23201 14.278L4.58201 14.628C4.89201 14.934 5.39401 14.934 5.70401 14.624L9.76801 10.56C9.92401 10.404 10 10.202 10 9.99999C10 9.79799 9.92201 9.59399 9.76801 9.43999Z"/>
+                          </svg>
+                      </figure>
                     </a>
                     <a href="index.html" class="text-center text-light">取消購票</a>
                 </form>

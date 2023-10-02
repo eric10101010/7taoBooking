@@ -35,6 +35,15 @@
         font-size: 20px;
         line-height: 29px;
         padding: 0 136px;
+        color: #FFF;
+        &:hover {
+            color: #FBFF22;
+            transition: .4s;
+            svg {
+                fill: #FBFF22;
+                transition: .4s;
+            }
+        }
         @include pad {
             padding: 0;
             width: 100%;
@@ -42,9 +51,8 @@
         @include mobile {
             padding: 0;
         }
-        img {
-            width: 20px;
-            height: 20px;
+        svg {
+            fill: #FFF;
         }
     }
 }
@@ -94,13 +102,21 @@
     &Btn {
         font-size: 20px;
         padding: 0 94px;
+        color: #FFF;
+        &:hover {
+            color: #FBFF22;
+            transition: .4s;
+            svg {
+                fill: #FBFF22;
+                transition: .4s;
+            }
+        }
         @include pad {
             padding: 0;
             width: 100%;
         }
-        img {
-            width: 20px;
-            height: 20px;
+        svg {
+            fill: #FFF;
         }
     }
 }
